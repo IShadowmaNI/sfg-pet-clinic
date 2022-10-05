@@ -26,7 +26,7 @@ public class VisitController {
     }
 
     @InitBinder
-    public void setAllowedFields(WebDataBinder dataBinder) {
+    public void dataBinder(WebDataBinder dataBinder) {
         dataBinder.setDisallowedFields("id");
 
         dataBinder.registerCustomEditor(LocalDate.class, new PropertyEditorSupport() {
